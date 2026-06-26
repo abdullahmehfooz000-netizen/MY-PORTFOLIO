@@ -56,15 +56,17 @@ export default function Experience() {
     <section id="experience" className="py-32 bg-slate-950 px-6">
       <div className="max-w-7xl mx-auto">
 
-        {/* Heading */}
+        {/* MAIN HEADING */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold mb-4">
-            Experience & Certifications
+
+          <h2 className="text-5xl font-bold mb-4 uppercase">
+            EXPERIENCE & CERTIFICATIONS
           </h2>
 
           <p className="text-gray-400">
             My professional journey and continuous learning path.
           </p>
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -72,8 +74,8 @@ export default function Experience() {
           {/* EXPERIENCE */}
           <div>
 
-            <h3 className="text-3xl font-bold mb-10 text-blue-400">
-              Experience
+            <h3 className="text-3xl font-bold mb-10 text-blue-400 uppercase">
+              EXPERIENCE
             </h3>
 
             <div className="relative border-l-2 border-blue-500 pl-8 space-y-12">
@@ -94,7 +96,7 @@ export default function Experience() {
 
                   <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
 
-                    <h4 className="text-2xl font-bold">
+                    <h4 className="text-2xl font-bold uppercase">
                       {exp.role}
                     </h4>
 
@@ -125,8 +127,8 @@ export default function Experience() {
           {/* CERTIFICATIONS */}
           <div>
 
-            <h3 className="text-3xl font-bold mb-10 text-blue-400">
-              Certifications
+            <h3 className="text-3xl font-bold mb-10 text-blue-400 uppercase">
+              CERTIFICATIONS
             </h3>
 
             <div className="space-y-8">
@@ -147,7 +149,7 @@ export default function Experience() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-bold">
+                      <h4 className="text-xl font-bold uppercase">
                         {cert.title}
                       </h4>
 

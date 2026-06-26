@@ -1,62 +1,92 @@
-import legalVault from "../assets/projects/legal-vault.png";
-import restaurantPos from "../assets/projects/restaurant-pos.png";
-import studyAbroad from "../assets/projects/study-abroad.png";
-import jobBoard from "../assets/projects/job-board.png";
+import aiInventory from "../assets/projects/Ai inventry.png";
+import blueraWebsite from "../assets/projects/bluera website.png";
+import carRentalWeb from "../assets/projects/car rental web.png";
+import couchlyWebsite from "../assets/projects/couchly website.png";
+import crmBox from "../assets/projects/crm-box.png";
+import digitalMarketingAgency from "../assets/projects/digital marketing agency.png";
 import fitnessPortal from "../assets/projects/fitness-portal.png";
+import freelanceWebsite from "../assets/projects/Freelance website.png";
 import healthPortal from "../assets/projects/health-portal.png";
+import jobBoard from "../assets/projects/job-board.png";
+import legalVault from "../assets/projects/legal-vault.png";
 import lms from "../assets/projects/lms.png";
 import realEstate from "../assets/projects/real-estate.png";
-import crmBox from "../assets/projects/crm-box.png";
+import restaurantPos from "../assets/projects/restaurant-pos.png";
+import studyAbroad from "../assets/projects/study-abroad.png";
 
 const projects = [
+  // ⭐ PREMIUM PROJECTS (TOP)
   {
-    title: "Secure Legal & Finance Vault",
+    title: "FREELANCE MARKETPLACE PLATFORM",
+    image: freelanceWebsite,
+  },
+  {
+    title: "CAR RENTAL WEB APPLICATION",
+    image: carRentalWeb,
+  },
+  {
+    title: "COUCHLY BOOKING PLATFORM",
+    image: couchlyWebsite,
+  },
+
+  // 🔥 OTHER FEATURED PROJECTS
+  {
+    title: "DIGITAL MARKETING AGENCY WEBSITE",
+    image: digitalMarketingAgency,
+  },
+  {
+    title: "AI INVENTORY MANAGEMENT SYSTEM",
+    image: aiInventory,
+  },
+  {
+    title: "BLUERA CORPORATE WEBSITE",
+    image: blueraWebsite,
+  },
+  {
+    title: "SECURE LEGAL & FINANCE VAULT",
     image: legalVault,
   },
   {
-    title: "Restaurant QR Menu & POS System",
+    title: "RESTAURANT QR MENU & POS SYSTEM",
     image: restaurantPos,
   },
   {
-    title: "Study Abroad Platform",
+    title: "STUDY ABROAD PLATFORM",
     image: studyAbroad,
   },
   {
-    title: "Niche Community Job Board",
+    title: "NICHE COMMUNITY JOB BOARD",
     image: jobBoard,
   },
   {
-    title: "Fitness Trainer Portal",
+    title: "FITNESS TRAINER PORTAL",
     image: fitnessPortal,
   },
   {
-    title: "Healthcare Telemedicine Portal",
+    title: "HEALTHCARE TELEMEDICINE PORTAL",
     image: healthPortal,
   },
   {
-    title: "Multi-Tenant LMS System",
+    title: "MULTI-TENANT LMS SYSTEM",
     image: lms,
   },
   {
-    title: "Real Estate Property & Tenant",
+    title: "REAL ESTATE PROPERTY & TENANT SYSTEM",
     image: realEstate,
   },
   {
-    title: "Subscription Box CRM",
+    title: "SUBSCRIPTION BOX CRM SYSTEM",
     image: crmBox,
   },
 ];
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="bg-slate-950 text-white py-24 px-6"
-    >
+    <section id="projects" className="bg-slate-950 text-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-5xl font-bold text-center mb-16">
-          Featured Projects
+        <h2 className="text-5xl font-bold text-center mb-16 uppercase">
+          FEATURED PROJECTS
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -81,7 +111,7 @@ export default function Projects() {
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-xl font-semibold uppercase">
                   {project.title}
                 </h3>
               </div>

@@ -19,12 +19,12 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* Logo */}
-        <h1 className="text-2xl font-bold text-white">
-          <span className="text-blue-500">CH</span> Abdullah
+        {/* LOGO */}
+        <h1 className="text-2xl font-bold text-white uppercase">
+          <span className="text-blue-500">CH</span> ABDULLAH
         </h1>
 
-        {/* Desktop Menu */}
+        {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8">
 
           {navLinks.map((link) => (
@@ -36,7 +36,7 @@ export default function Navbar() {
                 offset={-80}
                 duration={500}
                 activeClass="text-blue-500"
-                className="cursor-pointer capitalize text-gray-300 hover:text-blue-400 duration-300"
+                className="cursor-pointer text-gray-300 hover:text-blue-400 duration-300 uppercase"
               >
                 {link}
               </Link>
@@ -46,15 +46,15 @@ export default function Navbar() {
           <a
             href="/Abdullahch.resume.pdf"
             download="CH-Abdullah-Resume.pdf"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-xl duration-300"
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-xl duration-300 uppercase"
           >
             <FaDownload />
-            Resume
+            RESUME
           </a>
 
         </ul>
 
-        {/* Mobile Icon */}
+        {/* MOBILE ICON */}
         <button
           className="md:hidden text-2xl text-white"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -64,7 +64,7 @@ export default function Navbar() {
 
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       {menuOpen && (
         <div className="md:hidden bg-slate-900 border-t border-slate-800">
 
@@ -77,7 +77,7 @@ export default function Navbar() {
                 smooth={true}
                 offset={-80}
                 duration={500}
-                className="capitalize cursor-pointer text-gray-300 hover:text-blue-500 duration-300"
+                className="cursor-pointer text-gray-300 hover:text-blue-500 duration-300 uppercase"
                 onClick={() => setMenuOpen(false)}
               >
                 {link}
@@ -87,10 +87,10 @@ export default function Navbar() {
             <a
               href="/Abdullahch.resume.pdf"
               download="CH-Abdullah-Resume.pdf"
-              className="flex items-center gap-2 bg-blue-600 px-5 py-3 rounded-xl"
+              className="flex items-center gap-2 bg-blue-600 px-5 py-3 rounded-xl uppercase"
             >
               <FaDownload />
-              Resume
+              RESUME
             </a>
 
           </div>

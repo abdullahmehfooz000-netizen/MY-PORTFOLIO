@@ -2,13 +2,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-32 bg-slate-950 px-6"
-    >
+    <section id="about" className="py-32 bg-slate-950 px-6">
       <div className="max-w-7xl mx-auto">
 
-        {/* Heading */}
+        {/* HEADING */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,8 +13,8 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl font-bold mb-4">
-            About Me
+          <h2 className="text-5xl font-bold mb-4 uppercase">
+            ABOUT ME
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -28,7 +25,7 @@ export default function About() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* Left Side */}
+          {/* LEFT SIDE */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -38,8 +35,8 @@ export default function About() {
 
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10">
 
-              <h3 className="text-3xl font-bold mb-8 text-blue-400">
-                Who Am I?
+              <h3 className="text-3xl font-bold mb-8 text-blue-400 uppercase">
+                WHO AM I?
               </h3>
 
               <p className="text-gray-300 leading-9 mb-6">
@@ -63,7 +60,7 @@ export default function About() {
 
           </motion.div>
 
-          {/* Right Side */}
+          {/* RIGHT SIDE */}
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -71,15 +68,15 @@ export default function About() {
             viewport={{ once: true }}
           >
 
-            {/* Stats */}
+            {/* STATS */}
             <div className="grid grid-cols-2 gap-6 mb-8">
 
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center hover:scale-105 duration-300">
                 <h2 className="text-4xl font-bold text-blue-400">
                   10+
                 </h2>
-                <p className="text-gray-400 mt-2">
-                  Projects Completed
+                <p className="text-gray-400 mt-2 uppercase">
+                  PROJECTS COMPLETED
                 </p>
               </div>
 
@@ -87,43 +84,43 @@ export default function About() {
                 <h2 className="text-4xl font-bold text-blue-400">
                   MERN
                 </h2>
-                <p className="text-gray-400 mt-2">
-                  Stack Specialist
+                <p className="text-gray-400 mt-2 uppercase">
+                  STACK SPECIALIST
                 </p>
               </div>
 
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center hover:scale-105 duration-300">
                 <h2 className="text-4xl font-bold text-blue-400">
-                  React
+                  REACT
                 </h2>
-                <p className="text-gray-400 mt-2">
-                  Frontend Development
+                <p className="text-gray-400 mt-2 uppercase">
+                  FRONTEND DEVELOPMENT
                 </p>
               </div>
 
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center hover:scale-105 duration-300">
                 <h2 className="text-4xl font-bold text-blue-400">
-                  MongoDB
+                  MONGODB
                 </h2>
-                <p className="text-gray-400 mt-2">
-                  Database Management
+                <p className="text-gray-400 mt-2 uppercase">
+                  DATABASE MANAGEMENT
                 </p>
               </div>
 
             </div>
 
-            {/* Education */}
+            {/* EDUCATION */}
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10">
 
-              <h3 className="text-3xl font-bold mb-8 text-blue-400">
-                Education
+              <h3 className="text-3xl font-bold mb-8 text-blue-400 uppercase">
+                EDUCATION
               </h3>
 
               <div className="space-y-8">
 
                 <div>
-                  <h4 className="text-xl font-semibold">
-                    BS Software Engineering
+                  <h4 className="text-xl font-semibold uppercase">
+                    BS SOFTWARE ENGINEERING
                   </h4>
 
                   <p className="text-gray-400 mt-2">
@@ -136,8 +133,8 @@ export default function About() {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold">
-                    FSC Pre-Engineering
+                  <h4 className="text-xl font-semibold uppercase">
+                    FSC PRE-ENGINEERING
                   </h4>
 
                   <p className="text-gray-400 mt-2">

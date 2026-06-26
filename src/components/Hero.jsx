@@ -1,11 +1,7 @@
 import profile from "../assets/profile.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaDownload,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -14,34 +10,36 @@ export default function Hero() {
       className="min-h-screen bg-slate-950 relative overflow-hidden flex items-center"
     >
       {/* Background Glow */}
-      <div className="absolute w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full top-10 left-10"></div>
+      <div className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-blue-600/20 blur-[120px] md:blur-[150px] rounded-full top-10 left-10"></div>
 
-      <div className="absolute w-[400px] h-[400px] bg-cyan-500/20 blur-[150px] rounded-full bottom-10 right-10"></div>
+      <div className="absolute w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-cyan-500/20 blur-[120px] md:blur-[150px] rounded-full bottom-10 right-10"></div>
 
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
 
-        {/* Left Side */}
+        {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
+          className="text-center lg:text-left"
         >
-          <p className="text-blue-400 mb-3 text-lg">
-            Hello, I'm
+          {/* MAIN HEADINGS (CAPITAL) */}
+          <p className="text-blue-400 mb-2 md:mb-3 text-base md:text-lg uppercase tracking-wider">
+            HELLO, I'M
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            CH Abdullah
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 uppercase">
+            CH ABDULLAH
           </h1>
 
-          <div className="text-2xl md:text-3xl text-gray-300 mb-8">
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-6 md:mb-8 uppercase">
             <TypeAnimation
               sequence={[
-                "Full Stack Developer",
+                "FULL STACK DEVELOPER",
                 2000,
-                "MERN Stack Developer",
+                "MERN STACK DEVELOPER",
                 2000,
-                "React Developer",
+                "REACT DEVELOPER",
                 2000,
               ]}
               speed={50}
@@ -49,58 +47,58 @@ export default function Hero() {
             />
           </div>
 
-          <p className="text-gray-400 leading-8 max-w-xl">
+          <p className="text-gray-400 leading-6 md:leading-8 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base">
             Software Engineer passionate about building modern,
             scalable and high-performance web applications using
             React, Node.js, Express and MongoDB.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-5 mt-10">
+          {/* BUTTONS */}
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 md:mt-10 justify-center lg:justify-start">
 
             <a
               href="#contact"
-              className="bg-blue-600 hover:bg-blue-700 duration-300 px-7 py-4 rounded-2xl font-medium"
+              className="bg-blue-600 hover:bg-blue-700 duration-300 px-6 py-3 md:px-7 md:py-4 rounded-2xl font-medium text-center uppercase"
             >
-              Hire Me
+              HIRE ME
             </a>
 
             <a
               href="/Abdullahch.resume.pdf"
               download
-              className="border border-slate-700 hover:border-blue-500 duration-300 px-7 py-4 rounded-2xl flex items-center gap-3"
+              className="border border-slate-700 hover:border-blue-500 duration-300 px-6 py-3 md:px-7 md:py-4 rounded-2xl flex items-center justify-center gap-3 uppercase"
             >
               <FaDownload />
-              Download CV
+              DOWNLOAD CV
             </a>
 
           </div>
 
-          {/* Social Icons */}
-          <div className="flex gap-5 mt-10">
+          {/* SOCIAL ICONS */}
+          <div className="flex gap-4 md:gap-5 mt-8 md:mt-10 justify-center lg:justify-start">
 
             <a
               href="https://github.com/abdullahmehfooz000-netizen"
               target="_blank"
               rel="noreferrer"
-              className="bg-slate-800 p-4 rounded-full hover:bg-blue-600 duration-300"
+              className="bg-slate-800 p-3 md:p-4 rounded-full hover:bg-blue-600 duration-300"
             >
-              <FaGithub size={22} />
+              <FaGithub size={20} />
             </a>
 
             <a
               href="https://linkedin.com/in/YOUR_USERNAME"
               target="_blank"
               rel="noreferrer"
-              className="bg-slate-800 p-4 rounded-full hover:bg-blue-600 duration-300"
+              className="bg-slate-800 p-3 md:p-4 rounded-full hover:bg-blue-600 duration-300"
             >
-              <FaLinkedin size={22} />
+              <FaLinkedin size={20} />
             </a>
 
           </div>
         </motion.div>
 
-        {/* Right Side */}
+        {/* RIGHT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
@@ -114,13 +112,17 @@ export default function Hero() {
 
             <img
               src={profile}
-              alt="Abdullah"
+              alt="ABDUALLH"
               className="
                 relative
-                w-[320px]
-                h-[320px]
-                md:w-[450px]
-                md:h-[450px]
+                w-[220px]
+                h-[220px]
+                sm:w-[280px]
+                sm:h-[280px]
+                md:w-[380px]
+                md:h-[380px]
+                lg:w-[450px]
+                lg:h-[450px]
                 object-cover
                 rounded-full
                 border-4

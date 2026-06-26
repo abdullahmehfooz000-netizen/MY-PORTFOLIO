@@ -8,14 +8,12 @@ import {
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-32 bg-slate-950 px-6"
-    >
+    <section id="contact" className="py-32 bg-slate-950 px-6">
       <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-5xl font-bold text-center mb-4 text-white">
-          Get In Touch
+        {/* MAIN HEADING */}
+        <h2 className="text-5xl font-bold text-center mb-4 text-white uppercase">
+          GET IN TOUCH
         </h2>
 
         <p className="text-gray-400 text-center mb-16">
@@ -26,11 +24,11 @@ export default function Contact() {
 
           <div className="grid md:grid-cols-2 gap-12">
 
-            {/* LEFT SIDE - Contact Information */}
+            {/* LEFT SIDE */}
             <div>
 
-              <h3 className="text-3xl font-bold mb-8 text-white">
-                Contact Information
+              <h3 className="text-3xl font-bold mb-8 text-white uppercase">
+                CONTACT INFORMATION
               </h3>
 
               <div className="space-y-6">
@@ -51,7 +49,7 @@ export default function Contact() {
 
               </div>
 
-              {/* Social Icons */}
+              {/* SOCIAL ICONS */}
               <div className="flex gap-6 mt-10">
 
                 <a
@@ -76,13 +74,13 @@ export default function Contact() {
 
             </div>
 
-            {/* RIGHT SIDE - Resume */}
+            {/* RIGHT SIDE */}
             <div className="flex flex-col justify-center">
 
               <div className="bg-slate-900 rounded-3xl p-8 border border-slate-700">
 
-                <h3 className="text-2xl font-bold mb-6 text-white">
-                  Resume
+                <h3 className="text-2xl font-bold mb-6 text-white uppercase">
+                  RESUME
                 </h3>
 
                 <p className="text-gray-400 mb-8">
@@ -93,10 +91,10 @@ export default function Contact() {
                 <a
                   href="/Abdullahch.resume.pdf"
                   download="CH-Abdullah-Resume.pdf"
-                  className="inline-flex items-center gap-3 bg-blue-600 px-6 py-4 rounded-xl hover:bg-blue-700 duration-300 text-white font-medium"
+                  className="inline-flex items-center gap-3 bg-blue-600 px-6 py-4 rounded-xl hover:bg-blue-700 duration-300 text-white font-medium uppercase"
                 >
                   <FaDownload />
-                  Download Resume
+                  DOWNLOAD RESUME
                 </a>
 
               </div>

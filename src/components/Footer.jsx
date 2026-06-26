@@ -12,11 +12,11 @@ export default function Footer() {
 
         <div className="grid md:grid-cols-3 gap-12">
 
-          {/* Left Side */}
+          {/* LEFT SIDE */}
           <div>
 
-            <h2 className="text-3xl font-bold text-white mb-4">
-              CH Abdullah
+            <h2 className="text-3xl font-bold text-white mb-4 uppercase">
+              CH ABDULLAH
             </h2>
 
             <p className="text-gray-400 leading-7">
@@ -27,53 +27,52 @@ export default function Footer() {
 
           </div>
 
-          {/* Quick Links */}
+          {/* QUICK LINKS */}
           <div>
 
-            <h3 className="text-xl font-semibold mb-6">
-              Quick Links
+            <h3 className="text-xl font-semibold mb-6 uppercase">
+              QUICK LINKS
             </h3>
 
             <div className="flex flex-col gap-3 text-gray-400">
 
               <a href="#home" className="hover:text-blue-400 duration-300">
-                Home
+                HOME
               </a>
 
               <a href="#about" className="hover:text-blue-400 duration-300">
-                About
+                ABOUT
               </a>
 
               <a href="#skills" className="hover:text-blue-400 duration-300">
-                Skills
+                SKILLS
               </a>
 
               <a href="#experience" className="hover:text-blue-400 duration-300">
-                Experience
+                EXPERIENCE
               </a>
 
               <a href="#projects" className="hover:text-blue-400 duration-300">
-                Projects
+                PROJECTS
               </a>
 
               <a href="#contact" className="hover:text-blue-400 duration-300">
-                Contact
+                CONTACT
               </a>
 
             </div>
 
           </div>
 
-          {/* Social Links */}
+          {/* SOCIAL LINKS */}
           <div>
 
-            <h3 className="text-xl font-semibold mb-6">
-              Connect With Me
+            <h3 className="text-xl font-semibold mb-6 uppercase">
+              CONNECT WITH ME
             </h3>
 
             <div className="flex gap-5">
 
-              {/* GitHub */}
               <a
                 href="https://github.com/abdullahmehfooz000-netizen"
                 target="_blank"
@@ -83,7 +82,6 @@ export default function Footer() {
                 <FaGithub size={20} />
               </a>
 
-              {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/abdullah-chaudhary-852153275?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
@@ -93,7 +91,6 @@ export default function Footer() {
                 <FaLinkedin size={20} />
               </a>
 
-              {/* Email */}
               <a
                 href="mailto:abdullahmehfooz000@gmail.com"
                 className="bg-slate-800 p-4 rounded-full hover:bg-blue-600 duration-300"
@@ -103,30 +100,23 @@ export default function Footer() {
 
             </div>
 
-            {/* Badge */}
-            <div className="mt-8">
-
-              
-
-            </div>
-
           </div>
 
         </div>
 
       </div>
 
-      {/* Bottom */}
+      {/* BOTTOM */}
       <div className="border-t border-slate-800 py-6">
 
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
-          <p className="text-gray-500 text-sm">
-            © 2026 CH Abdullah. All Rights Reserved.
+          <p className="text-gray-500 text-sm uppercase">
+            © 2026 CH ABDULLAH. ALL RIGHTS RESERVED.
           </p>
 
-          <p className="text-gray-500 text-sm">
-            Designed & Developed by Abdullah
+          <p className="text-gray-500 text-sm uppercase">
+            DESIGNED & DEVELOPED BY ABDULLAH
           </p>
 
         </div>

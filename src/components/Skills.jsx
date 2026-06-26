@@ -80,8 +80,8 @@ export default function Skills() {
   const SkillCard = ({ title, skills }) => (
     <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:scale-105 duration-300">
 
-      <h3 className="text-2xl font-bold mb-8 text-blue-400">
-        {title}
+      <h3 className="text-2xl font-bold mb-8 text-blue-400 uppercase">
+        {title.toUpperCase()}
       </h3>
 
       <div className="space-y-8">
@@ -93,7 +93,7 @@ export default function Skills() {
               {skill.icon}
 
               <div className="flex justify-between w-full">
-                <span>{skill.name}</span>
+                <span className="uppercase">{skill.name}</span>
                 <span className="text-gray-400">
                   {skill.level}
                 </span>
@@ -116,16 +116,14 @@ export default function Skills() {
   );
 
   return (
-    <section
-      id="skills"
-      className="py-32 bg-slate-950 px-6"
-    >
+    <section id="skills" className="py-32 bg-slate-950 px-6">
       <div className="max-w-7xl mx-auto">
 
+        {/* MAIN HEADING */}
         <div className="text-center mb-20">
 
-          <h2 className="text-5xl font-bold mb-4">
-            My Skills
+          <h2 className="text-5xl font-bold mb-4 uppercase">
+            MY SKILLS
           </h2>
 
           <p className="text-gray-400">
@@ -136,25 +134,10 @@ export default function Skills() {
 
         <div className="grid lg:grid-cols-2 gap-8">
 
-          <SkillCard
-            title="Frontend"
-            skills={frontend}
-          />
-
-          <SkillCard
-            title="Backend"
-            skills={backend}
-          />
-
-          <SkillCard
-            title="Database"
-            skills={database}
-          />
-
-          <SkillCard
-            title="Tools"
-            skills={tools}
-          />
+          <SkillCard title="FRONTEND" skills={frontend} />
+          <SkillCard title="BACKEND" skills={backend} />
+          <SkillCard title="DATABASE" skills={database} />
+          <SkillCard title="TOOLS" skills={tools} />
 
         </div>
 
