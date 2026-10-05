@@ -6,13 +6,14 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    "home",
-    "about",
-    "skills",
-    "experience",
-    "projects",
-    "contact",
-  ];
+  "home",
+  "about",
+  "skills",
+  "experience",
+  "projects",
+  "certificates",
+  "contact",
+];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-slate-950/70 backdrop-blur-xl border-b border-white/10">
